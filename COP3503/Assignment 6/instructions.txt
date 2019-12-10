@@ -1,0 +1,78 @@
+Details
+
+For this program, you are going to convert octal (integer) numbers into their decimal number equivalents (exactly the opposite of what you have done in Assignment 4). Make sure that you create a new Project and Java class file for this assignment. Your file should be named “Main.java”. You can read about octal-to-decimal number conversions here: http://en.wikipedia.org/wiki/Octal (Links to an external site.)Links to an external site.
+Objective
+
+Your program should prompt the user to enter a number of no greater than 8 digits.  If the user enters a number greater than 8 digits or a value less than 0, it should re-prompt the user to enter a number again*.  You do not need to check if the digits are valid octal numbers (0-7), as this is guaranteed.
+Instructions
+
+    Note that the conversion logic should be in a separate method (not the main() method).
+    main() method will take the input from the user and pass it to the conversion() method.
+    The conversion() method will convert the input octal to decimal and print the output.
+        No return value is required.
+        a sample structure is shown below.
+
+    Use a sentinel while loop to solve the problem.
+    Ideally, you should copy your assignment 4 code here and modify it to serve the new purpose. This will save you time.
+
+    USE ONLY INTEGER VARIABLES FOR INPUTS AND OUTPUTS.
+    USE ONLY THE TECHNIQUES TAUGHT IN CLASS
+
+main(){
+
+   int oct = user input;
+
+   conversion(oct);
+
+}
+
+void conversion(int o){
+
+   // logic goes here.
+
+   print(decimal);
+
+}
+Goals
+
+    more experience in WHILE loop.
+    experience in Java Methods
+    logical thinking
+
+Sample Runs
+
+Sample Program Run (user input is underlined)
+
+Enter up to an 8-digit octal number and I will convert it for you: 77777777
+
+16777215
+
+Sample Program Run (user input is underlined)
+
+Enter up to an 8-digit octal number and I will convert it for you: 775002
+
+260610
+
+ Sample Program Run (user input is underlined)
+
+Enter up to an 8-digit octal number and I will convert it for you: 0
+
+0
+
+ Sample Program Run (user input is underlined)
+
+Enter up to an 8-digit octal number and I will convert it for you: 55
+
+45
+
+ Sample Program Run (user input is underlined)
+
+Enter up to an 8-digit octal number and I will convert it for you: 777777777
+
+Enter up to an 8-digit octal number and I will convert it for you: 777777777
+
+Enter up to an 8-digit octal number and I will convert it for you: 700000000
+
+Enter up to an 8-digit octal number and I will convert it for you: 77
+
+63

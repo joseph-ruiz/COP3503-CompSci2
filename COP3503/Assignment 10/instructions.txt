@@ -1,0 +1,38 @@
+Instructions
+In this project, you will check whether one input string is a palindrome or not. A palindrome is a word, phrase, number, or another sequence of characters that reads the same backward as forward, such as madam. You CANNOT use the reverse() method available in java for the string class. Instead, you will use the character array of the input string to see whether it's a palindrome or not.
+
+The palindrome check should be done inside a separate method and it will be called from inside the main() method. Please go through the slides of the String class and see how to use/manipulate the character array of a string (Hint: S.toCharArray()).
+
+If the input string is not a palindrome, you will print how the input string looks like if read backward or forward.
+
+Output Specifications
+If your program does not follow the output structure shown below, it will not pass the test cases in Repl.it.
+
+Sample Code Structure
+public static void main(String args[]){
+     String s= in.nextLine();// take string input here
+     checkPalindrome();//check whether the string input s is a palindrome or not.
+}
+checkPalindrome()//method header here
+{
+     //method body here
+}
+
+Goals
+
+    Manipulation of a string
+    Manipulation of the character array of a string
+
+
+Sample Runs
+
+    ayan
+    No: naya
+
+
+    madam
+    Yes
+
+
+    taco cat
+    Yes

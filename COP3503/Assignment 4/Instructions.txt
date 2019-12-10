@@ -1,0 +1,34 @@
+In this assignment, you will write the program inside the Repl.it IDE and submit the .java file only.
+
+    The filename should be Main.java and consequently, the class name would be Main -- you will lose points if any other file and/or class name is used.
+
+Description
+
+For this program, you are going to convert decimal (integer) numbers into their octal number (integer) equivalents. Make sure that you create a new Project and Java class file for this assignment. Your Repl.It file should be named  “Main.java”. You can read about octal-to-decimal number conversions here: http://en.wikipedia.org/wiki/Octal (Links to an external site.)Links to an external site.
+Instructions
+
+    The input to the program will be a single non-negative integer number. If the number is less than or equal to 2097151, convert the number to its octal equivalent.
+
+        If the number is larger than 2097151, output the phrase “UNABLE TO CONVERT” and quit the program.
+
+    The output of your program will always be a 7-digit octal number with no spaces between any of the digits. Some of the leading digits maybe 0. It may help to think that you may output each digit of the octal number individually as you calculate it, as long as you don't put spaces or newlines in your output between each digit.
+    Use a while loop to solve the problem. 
+    DO NOT USE Strings.
+    Here are a few examples of decimal numbers and their octal number equivalents:
+    octal conversion examples.png
+
+Goals
+
+    Experience with the while loop.
+    Experience with if/else.
+
+Sample Runs
+
+Sample Program Run
+Please enter a number between 0 and 2097151 to convert: 160000
+Your integer number 160000 is 0470400 in octal.
+
+
+Sample Program Run 
+Please enter a number between 0 and 2097151 to convert: 5000000
+UNABLE TO CONVERT

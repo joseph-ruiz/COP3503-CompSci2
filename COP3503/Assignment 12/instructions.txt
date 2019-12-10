@@ -1,0 +1,40 @@
+Introduction
+In this assignment, you will create a program implementing the functionalities of a standard queue in a class called Queue3503. You will test the functionalities of the Queue3503 class from the main() method of the Main class. In a queue, first inserted items are removed first and the last items are removed at the end (imagine a line to buy tickets at a ticket counter).
+
+
+The Queue3503 class will contain:
+a. An int[] data filed named elements to store the int values in the queue.
+b. An int data field named size that stores the number of elements in the queue.
+c. A no-arg constructor that creates a Queue object with default capacity 0.
+d. A constructor that takes an int argument representing the capacity of the queue. 
+e. A method with signature enqueue(int v) that adds the int element v into the queue.
+f. A method with signature dequeue() that removes and returns the first element of the
+queue.
+g. A method with signature empty() that returns true if the queue is empty.
+h. A method with signature getSize() that returns the size of the queue (return type is hence
+int)).
+
+
+The queue class you develop should be tested using the following steps: (In other words, your program named Main will consist of the following)
+a. Start your queue with an initial capacity of 8.
+b. When the dequeue() method is called, an element from the queue at the beginning of the queue must be removed. 
+c. The main() method in your Main class should consist of statements to:
+             i.  Create a queue object;
+             ii. Call enqueue() to insert twenty integers (taken from the user) into the queue.
+             iii. After the above task is completed, include a for-loop that will print out the contents of the queue.
+d. After printing the queue filled with twenty integers, call dequeue() repeatedly to remove the beginning element of the queue.
+e. Print the contents of the queue after removing every fifth number.
+f. For your reference, the execution of the Main program is shown below. User inputs for populating the Queue is shown in the first line. Next, your program outputs are shown.
+
+Points to think about
+
+    Which data structure will be the best fit to implement this Queue class - Array or ArrayList?
+
+
+
+Sample Run
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+Initial content: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+After removing 5 elements: 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+After removing 5 elements: 11 12 13 14 15 16 17 18 19 20
+After removing 5 elements: 16 17 18 19 20

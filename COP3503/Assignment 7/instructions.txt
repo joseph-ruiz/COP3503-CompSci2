@@ -1,0 +1,104 @@
+Description
+
+    Modify Assignment 3, which was to write a 1337-leet conversion program.
+    For this program, ask the user how many characters they will convert and then use a while loop to prompt and convert that many 'correct' characters.  Your program should only convert as many 'correct' characters as the user has said he/she will convert.
+    When prompting the user for how many characters she will convert, validate that they enter a number greater than 0 before allowing them to actually convert characters.  This validation should be driven by a sentinel-controlled loop.
+    All of the previous guidelines and restrictions about how to display the 1337 characters apply from program #3.  Refer to program #3's assignment sheet to get the full description of output requirements.  You must convert characters from A to Z and a to z correctly and generate appropriate output for characters that can't be converted.
+    You will count only the correct inputs from the users, i.e., if the user wants to convert 5 inputs, you will only count those inputs that are within A-Z and not anything else. If the input is not within A-Z, you will not count that as an input from the user. 
+    The conversion logic should be implemented within a separate method and not in main. A sample structure is shown below. This method will be called X number of times to covert X correct inputs from the user one after the other.
+
+ 
+
+main(){
+
+   int k = number of inputs the user wants to test. Make sure it's a valid input.  //use a             //sentinel - while loop for this validation.
+
+  for(int i = 1 to k){
+
+      char c = one input from the user.
+
+      leet_loop_convert(c);
+
+   }
+
+}
+
+void leet_loop_convert(c){
+
+   // logic from assignment 3 goes here.
+
+   // print the converted result.
+
+}
+Goals
+
+    Use a sentinel-controlled loop for data validation and a counter-controlled loop for processing control in your program.
+    Modify existing code to extend the functionality of a program.
+
+Points to Think About
+
+    Since you will be attempting to match char values, make sure you make the appropriate kind of test in the switch statement's case
+
+Grading Notes
+
+    When converting your input to 1337 code, this program must follow the output requirements already set forth in assignment #3 earlier this semester. Make sure to have appropriate spacing, etc.
+    You must use a switch statement and not a series of nested if/else statements to implement this program. Failure to use a switch statement to implement the solution will result in your program not being graded.
+    You may only use material covered in class.
+
+Sample runs
+
+Sample Program Run (user input is underlined)
+
+How many characters would you like to convert? 2
+
+Enter character #1 to convert: !
+
+! -
+
+Enter character #1 to convert: u
+
+u (_)
+
+Enter character #2 to convert: #
+
+# -
+
+Enter character #2 to convert: V
+
+V \/
+
+ 
+
+Sample Program Run (user input is underlined)
+
+How many characters would you like to convert? 3
+
+Enter character #1 to convert: %
+
+% -
+
+Enter character #1 to convert: a
+
+a @
+
+Enter character #2 to convert: A
+
+A @
+
+Enter character #3 to convert: B
+
+B I3
+
+ 
+
+Sample Program Run (user input is underlined)
+
+How many characters would you like to convert? 0
+
+How many characters would you like to convert? -1
+
+How many characters would you like to convert? 1
+
+Enter character #1 to convert: Y
+
+Y j

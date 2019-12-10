@@ -1,0 +1,79 @@
+Description
+
+In this assignment, you will implement a switch case. Make sure that you create a new Project and Java class file for this assignment. Your Repl.It project/file should be named “N#_assign5”/ “Main.java”.
+
+You will submit the .java file only!
+
+From Wikipedia (http://en.wikipedia.org/wiki/Leet):  “Leet or Leetspeak (often written in Leet as 1337 or 13375p34k) is a writing system used primarily on the Internet, particularly in online games such as Counter-Strike, Half-Life, Half-Life 2, and Team Fortress. The term itself is derived from the word Elite, meaning ‘better than the rest,’ and generally, has the same meaning when referring to the hacking skills of another person.”
+
+
+Write a complete Java program that allows the user to enter a character between a and z or A and Z and converts it to its 1337 equivalent.  Use a switch statement to accomplish the conversion of the character entered.  
+
+Your output should follow the format (also see the sample output):
+
+INPUTCHAR 1337CONVERSION
+
+where INPUTCHAR is the character that was input by the user and 1337CONVERSION is the 1337 equivalent of that character.  1337CONVERSION should be a single dash “-” (without the quotes) if the character input by the user cannot be converted.  There should be a single space between the INPUTCHAR and the 1337CONVERSION.
+
+IMPORTANT: Your 1337 equivalents should not have any spaces in them and should respect the letter case of the conversion.  In other words, b or B should be displayed as I3, not I 3 (with a space between the I and 3) or i3 (with a lowercase i).  You may assume that the user will only enter a single character value as input and then the program should quit.
+Goals
+
+    Create char variables and use the input.next().charAt(0) method of getting character input.
+    Use the switch statement to help solve a computer program.
+    Test character values in a switch statement.
+
+Points to Think About
+
+    Make sure to remember how 'break' should be used inside of a switch statement.
+    Make sure you make the appropriate kind of test in the switch statement's case labels to match char values.
+
+Must do
+
+    You must use a switch statement and not a series of nested if/else statements to implement this program.
+    Your program should only attempt to convert one character and then quit - no loop is required.
+
+Sample Run (user input is underlined for better understanding - your output will NOT be underlined)
+
+Enter character to convert: G
+
+G 6
+
+Enter character to convert: e
+
+e &
+
+Enter character to convert: T
+
+T +
+
+Enter character to convert: f
+
+f ]=
+
+Enter character to convert: U
+
+U (_)
+
+ Enter character to convert: z
+
+z 2
+
+Enter character to convert: Z
+
+Z 2
+
+ Enter character to convert: y
+
+y j
+
+Enter character to convert: !
+
+! -
+
+ Enter character to convert: 2
+
+2 -
+
+Enter character to convert: ?
+
+? -

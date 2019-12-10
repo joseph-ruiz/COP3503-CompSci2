@@ -1,0 +1,44 @@
+In this assignment, you will write a java program which will check whether an input year is a leap year or not. You will write the program inside the Repl.it IDE and submit the .java file only.
+Instructions
+
+1. Ask the user for a year input (positive integer - should be between 1500 and 2019, inclusive).
+
+2. If the year input is not between 1500 and 2019, do not check for leap year, rather print that this year cannot be checked.
+
+3. Take a year input from the user (should be between 1500 and 2019)
+
+4. If the input year is a leap year, print that year is a leap year; otherwise, print that the year is not a leap year.
+
+5. Point of thought: how will you handle centurial years, i.e., years ending in 00, e.g., 1900, 1800, 1700, 2000 etc.?
+Goals
+
+    Gain experience in input taking using the scanner class in Java.
+    Gain experience in if/else selection statement in Java.
+
+File/Project Naming
+
+Your project/file should be named “N#_assign2”/ “Main.java”.
+Test Your Program
+
+    Once the code is typed, you will compile+run (execute) your code.
+    You will input the year integer.
+    See the output given by your code.
+
+Sample Output
+
+Your output should look like this:
+
+    What year do you want to test? (make sure it's between 1500 and 2017): 1400
+
+      This year cannot be checked. Try again!
+
+    What year do you want to test? (make sure it's between 1500 and 2017): 2018
+
+       This year cannot be checked. Try again!
+
+    What year do you want to test? (make sure it's between 1500 and 2017): 2016
+
+    Yes, 2016 is a leap year!
+    What year do you want to test? (make sure it's between 1500 and 2017): 1900
+
+    Nope, 1900 is NOT a leap year!

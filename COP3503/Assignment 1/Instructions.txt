@@ -1,0 +1,90 @@
+This is the first assignment of the course. You will write a java program for this assignment. The program that you will write is given at the end of this document. Your objective is to TYPE (not copy and paste) the program inside Repl.it. Next, you will compile and execute the program and record the outputs for corresponding inputs in a text file.
+
+You do not have to worry about what is written in the code. You will learn everything as the semester progresses. In this assignment, you will just type it out and gain experience in java code writing.
+Goals
+
+    You will get an experience in java code writing which will be explored later in the semester.
+    You will get experience in writing/compiling/executing java programs inside the Repl.it IDE.
+    You will also get experience in providing inputs to a java program and seeing the corresponding outputs.
+    Finally, submitting a .java file to the instructor via Canvas.
+
+File/Project Naming
+
+Your repl.it project/file should be named “N#_assign1”/ “N#_ assign1.java”.
+Test Your Program
+
+    Once the code is typed, you will run (execute) your code.
+    If there is no error in typing, your code will be compiled fine and will ask for inputs from you.
+    You should test your code with different types of inputs and see what the corresponding outputs are.
+    Save the inputs and their corresponding outputs in a text file (copy from repl.it and paste into a text file).
+    Submit this text file along with your java file via Canvas.
+
+The code is given below in the box. DO NOT COPY THE CODE. Type it by yourself.
+
+import java.util.Scanner;
+
+ 
+
+public class N#_assign1 // replace N# with your own N-number
+
+{
+
+        public static void main ( String args[] )
+
+        {
+
+                Scanner input = new Scanner ( System.in );
+
+                int number1, number2;
+
+               
+
+                System.out.print ( "Enter first integer: ");
+
+                number1 = input.nextInt();
+
+               
+
+                System.out.print ( "Enter second integer: ");
+
+                number2 = input.nextInt();
+
+ 
+
+                if (number1 == number2)
+
+                        System.out.printf( "%d == %d\n", number1, number2 );
+
+               
+
+                if (number1 != number2)
+
+                        System.out.printf( "%d != %d\n", number1, number2 );
+
+               
+
+                if (number1 < number2)
+
+                        System.out.printf( "%d < %d\n", number1, number2 );
+
+               
+
+                if (number1 > number2)
+
+                        System.out.printf( "%d > %d\n", number1, number2 );
+
+               
+
+                if (number1 <= number2)
+
+                        System.out.printf( "%d <= %d\n", number1, number2 );
+
+               
+
+                if (number1 >= number2)
+
+                        System.out.printf( "%d >= %d\n", number1, number2 );
+
+        }
+
+}

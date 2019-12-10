@@ -1,0 +1,87 @@
+Instructions
+
+    Write a program that will add the digits of a person’s birth date to obtain a single digit to generate a numerology number.  You will submit the code via Repl.it classroom: https://repl.it/classroom/invite/g9JDhyg. 
+
+
+    Use one method for each of the following tasks:   
+    date validating
+    date crunching
+
+
+First: Get a Date
+Numerology has been used since ancient times to shed light on relationships, health, and global events. Each element in a birth date is believed to possess a special numerical significance.  We are going to develop our own rudimentary numerology prediction program.  The first thing to do is to ask the user to enter a birth date to process.
+You will need to indicate to your user that they need to enter the month, day and year in that order separated by spaces and forward slashes, which look like this: /.  An example would be 12 / 25 / 2112.  The spaces must be present between the numeric and character input.
+Second: Validate the Date
+The important and time-consuming portion of this program is validating your input from the user.  This means that you need to check to make sure the month is between 1 and 12, the day is appropriate for the month, and the year is between 1500 and 3000, inclusive. 
+By “the day is appropriate for the month and year”, this means that if a date of January 32nd is entered or a date of June 0th is entered, you should recognize and report that.  This also means that you should check to see that if the year is a leap year, you should allow February 29th and if it's not a leap year, you should disallow February 29th.  See the "Solution Suggestions" for a website that discusses leap years (You can use your previous assignment codes to check whether a year is a leap year or not).
+
+    Allow the user to input the entire date before you validate it.
+    You should continuously re-prompt the user for a date until a valid date is entered (you should use a 'while' loop for this).  If one part of the date fails (month, day or year), re-prompt for the entire date again.  Do not simply re-prompt for the offending part of the date.  Output appropriate error messages for the incorrect dates.  See the example runs for sample error messages.
+
+Third: Crunch the Date
+Then, you need to calculate a single digit from the birth date. For example, if your birth date is 3/19/1955 you add 3+1+9+1+9+5+5 to get 33.  You would then break this apart and add 3+3 to get 6.
+
+    You will need to be careful because it is possible to have to “fold” the number more than just once, as in the above example.  For example, if the birth date was 7/5/1942, you would add up the individual digits 7+5+1+9+4+2 to get 28, then you would need to add 2 + 8 to get 10.  This is still a two-digit number, and needs to be added again – 1 + 0 – to get a single-digit result of 1.
+    You can simplify the process by adding the month day and year together first (i.e., 7+5+1942, to get 1954) and then breaking down and adding that result (1+9+5+4), which results in 19, which needs to be broken down again to get 1+9 which results in 10, which then results in 1+0, or 1.  You should never have to crunch a number more than 3 times and will usually only need to add the digits once.
+
+
+Output Specifications
+Once you have obtained the single-digit, you are going to print it out. If the input is invalid, print the text "Invalid". (I is in CAPS) Note: Do not print ANYTHING ELSE apart from the single-digit number or the string Invalid as your output. Your code will be automatically checked by repl.it and any text and/or number apart from the single-digit final answer or the word Invalid in your output will result in a failing grade.
+
+ Also, do not prompt the user for the input with any text -- input will be automatically provided (see sample below). 
+
+Solution Suggestions
+
+    It might actually be easier to work backward solving this program, like this, checking each step as you complete it.
+    The first thing you could do is write a switch statement that handles 9 possible numerology forecasts. Test this switch statement by using exact values for the switch's variable to make sure it works and outputs all 9 numerology forecasts before moving on.
+    Then add the code to take a date and crunch it down to a single digit. This code should come before your switch  For simply testing this code, don’t worry about validating the date or input format yet; declare three variables (for example month, date, year), read in the date to process from the user and then feed that result into the switch statement you've already developed and that you know works from the previous step.
+    Finally, add code to validate the date that you read from the keyboard before crunching it. Validation will need to include tests for the month, day and year as well as for using forward slashes between those pieces of information. 
+    Make sure that your program continuously prompts the user for a date until a valid date is entered.
+    Make sure to allow the user to enter the entire date before validating it. In other words, don't just validate the month, then validate the day and then validate the year. Allow the entire date to be entered, then validate it and output an appropriate error message, repeating input if necessary.
+    Information about leap years: http://j.mp/whatisaleapyear
+
+
+Goals
+
+    Use most of the concepts in Java that we have learned so far.
+    Use only the data type int for numbers in this program; there’s no need to calculate floating-point numbers.
+    Solve a moderately complex Java program using the techniques you’ve learned so far.
+
+
+Points to Think About
+
+    Validate to make sure that the year is between 1500 and 3000, inclusive.
+    Validate to make sure that the month is between 1 and 12, inclusive.
+    Validate to make sure that the day is appropriate for the month (at least >=1 and <= 28, 29, 30 or 31 depending on which month and year it is).
+    Validate that the user uses forward slashes (/) between the month, day and year.
+
+
+Testing Your Program
+
+    A good way to start testing your program is to enter all the bad dates you can think of (i.e., 1/0/2007, 1/32/2007, 2/-1/2007, 1/1/2281, etc).
+    Then, starting with 9/1/2007, test your program with all dates through 9/10/2007 to make sure you output 9 different numerology reports (9/1/2007 and 9/10/2007 should both output 1).
+
+
+Sample Program Run (user input is underlined)
+
+    7 / 23 / 1982
+
+5
+
+    7 / 27 / 1981
+
+8
+
+    0 / 10 / 2000
+
+Invalid
+13 / 10 / 2000
+Invalid
+2 – 29 - 2007
+Invalid
+2 / 29 - 2007
+Invalid
+2 / 29 / 2007
+Invalid
+2 / 28 / 2007
+3

@@ -1,0 +1,43 @@
+Instructions
+The UNF Arena can seat 12,000 people for an event.  If the arena was full and you were to poll everyone for which day of the year (between 1 and 365, inclusive) they were born, determine which days had the most birthdays and which days had the fewest birthdays.
+Write a program that will generate 12,000 random birthdays (integer numbers) between 1 and 365 and count how many people have that same birthday.  Output a listing of the days that have the most birthdays and the days that have the fewest birthdays.  You do not need to convert a number like 32 to an actual date (February 1st).
+
+Your code will have two classes: 
+
+    the Main class will hold the main() method.  
+    From this class, you will create an object of the Arena class.
+    This object will call responsible methods in the Arena class to print the MAX and MIN birthday dates.
+    the Arena class will have a random number generation method.  
+    This class's constructor will take #of people in the area as an input.
+    With this number, you will create an array and a method will put random numbers between 1 and 365 in this array.
+    Two other methods in this class will determine the days with MAX and MIN birthdays.
+    Make sure to print ALL maximum and minimum birthdate days.
+    The two classes can be part of the same file. A naive example structure is shown below.
+
+
+
+ public class Main{
+ public static void main(String args[]){
+Arena a = new Arena();
+a.printArena();
+}
+}
+ class Arena{
+void printArena() {
+System.out.println("I am arena");
+}
+}
+ 
+Goals
+
+    Use your knowledge of arrays and random number generation to solve a problem.
+    Use looping structures to determine the largest and smallest values in an array and then find each occurrence of that value.
+    Gain experience in creating objects and multiple classes.
+    Gain experience in method call using an object of a class written by yourself.
+
+
+Sample output
+The following days have 75 people:
+147
+The following days have 35 people:
+143 312

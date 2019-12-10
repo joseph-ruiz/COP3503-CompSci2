@@ -1,0 +1,35 @@
+Instructions
+
+    Write a program that asks for the weight of a package in pounds and then the distance the package is to be shipped [Input order: pounds distance]. With this information, calculate and display the shipping charges for that package.  The two inputs and the output will be stored in a double array.
+    You may not assume that the values the user enters are valid.  Because of this, your program will need to validate that the weight they enter is between 1 and 60, inclusive.  The company can only ship packages between 1 pound and 60 pounds, inclusive (make sure that you allow for 1 and 60).
+    Once a valid weight has been obtained, your program will need to prompt the user for a valid distance until they enter a value greater than or equal to 1.  The company has to ship a package at least 1 mile.
+    Output your results with two significant digits after the decimal place.
+    To calculate the shipping cost, figure the shipping rate based on the weight, then use the number of miles to calculate the actual shipping cost.
+    For example, for a package that weighs 22 pounds that is being shipped 297 miles, you should charge the individual $27.09 because: you should charge $9.03 (based on the weight) for the first 100 miles, $9.03 for the second 100 miles and another $9.03 for the remaining 97 miles, which is a fraction of 100 miles.  Do not pro-rate the shipping charges based on partial mileage (like 97/100 miles).
+
+Goals
+
+    Experience with creating and storing data in arrays.
+    Use looping structures to perform data validation on user input.
+
+
+Testing your Program
+
+    Since there are so many ranges and boundaries in this program (ranges for weight and ranges for distance), you should test a number of different inputs in your program.
+    For instance, pick a distance of 57 miles and then test each of the following weights with it: 1, 10, 11, 20, 21, 30, 31, 40, 41, 50, 60.  Then pick a particular weight such as 25 and then a few different distances: 1, 50, 100, 150, 200, 201, 576. 
+    You should manually calculate the desired for each of those combinations and then see if your program generates the correct results.
+
+
+Output Specifications
+If your program does not follow the output structure shown below, it will not pass the test cases in Repl.it.
+Sample Program Run (user input is underlined)
+
+    0 1
+    61 1
+    39 -1
+    39 678
+    Output: $77.28
+    39 100
+    Output: $11.04
+    39 101
+    Output: $22.08

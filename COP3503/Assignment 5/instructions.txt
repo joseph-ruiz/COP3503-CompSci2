@@ -1,0 +1,70 @@
+In this assignment, you will extend the java code that you have written for assignment 2. Make sure that you create a new Repl.it project and Java class file for this assignment. Submit the .java file only.
+
+Your file should be named “Main.java”.
+
+Instructions
+
+    Ask the user how many year inputs he wants to check - an integer.
+        Assume that the user always gives an input which is between 1 and 5 (inclusive).
+    Next, ask the user for K number of year inputs where K = the number user has given as input before (inside a while loop).
+    Check for each year input whether that year is a leap year or not (Assignment 2).
+        Take year input (positive integer - should be between 1500 and 2017, inclusive).
+        If the year input is not between 1500 and 2017, do not check for leap year, rather print that this year cannot be checked.
+        If the input year is a leap year, print that year is a leap year; otherwise, print that the year is not a leap year.
+        make sure to handle the centurial years, i.e., years ending in 00, e.g., 1900, 1800, 1700, 2000, etc.?
+    Copy the code written for Assignment 2 and add the 'while loop' on top of that. Use while loop only for this assignment. 
+
+ 
+Goals
+
+    Gain experience in input taking using the scanner class in Java.
+    Gain experience in if/else selection statement in Java.
+    Gain experience in while loop techniques in Java.
+
+ 
+Sample Code Structure
+
+// add necessary import commands
+
+public class samplecode{
+
+   public static void main (String[] args){
+
+      // create the required variables first.
+
+     while (not all inputs have been taken - add this condition here){
+
+        //add the code from assignment 2.
+
+      }
+
+   }
+
+}
+
+ 
+Test Your Program
+
+    Once the code is typed, you will compile+run (execute) your code.
+    You will input the number of years (integer input).
+    Next input the actual year values between 1500 and 2017  (integer input).
+    See the output given by your code.
+
+ 
+Sample Output
+
+Your output should look like this:
+
+    How many years do you want to check (must be between 1 and 5)? 2
+    What's the year you want to test? (make sure it's between 1500 and 2017): 1400
+    This year cannot be checked. Try again!
+    What's the year you want to test? (make sure it's between 1500 and 2017): 2016
+    Yes, 2016 is a leap year!
+
+    How many years do you want to check (must be between 1 and 5)? 3
+    What's the year you want to test? (make sure it's between 1500 and 2017): 1400
+    This year cannot be checked. Try again!
+    What's the year you want to test? (make sure it's between 1500 and 2017): 2016
+    Yes, 2016 is a leap year!
+    What's the year you want to test? (make sure it's between 1500 and 2017): 2017
+    Nope, 2017 is not a leap year!
